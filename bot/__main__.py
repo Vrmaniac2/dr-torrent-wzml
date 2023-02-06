@@ -91,17 +91,17 @@ def stats(update, context):
                     f'<b>╰ 🔻 Download Data:</b> {recv}\n\n'
 
     else:
-            stats = f'<b>╭─《🌐 BOT STATISTICS 🌐》</b>\n' \
-                    f'<b>├  Updated On: </b>{last_commit}\n'\
-                    f'<b>├  Uptime: </b>{currentTime}\n'\
-                    f'<b>├  Version: </b>{version}\n'\
-                    f'<b>├  OS Uptime: </b>{osUptime}\n'\
-                    f'<b>├  CPU:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
-                    f'<b>├  RAM:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
-                    f'<b>├  Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
-                    f'<b>├  Disk Free:</b> {free}\n'\
-                    f'<b>├  Upload Data:</b> {sent}\n'\
-                    f'<b>╰  Download Data:</b> {recv}\n\n'
+            stats = f'<b>《🌐 BOT STATISTICS 🌐》</b>\n' \
+                    f'<b> Updated On: </b>{last_commit}\n'\
+                    f'<b> Uptime: </b>{currentTime}\n'\
+                    f'<b> Version: </b>{version}\n'\
+                    f'<b> OS Uptime: </b>{osUptime}\n'\
+                    f'<b> CPU:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
+                    f'<b> RAM:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
+                    f'<b> Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
+                    f'<b> Disk Free:</b> {free}\n'\
+                    f'<b> Upload Data:</b> {sent}\n'\
+                    f'<b> Download Data:</b> {recv}\n\n'
 
 
 
@@ -133,14 +133,14 @@ def stats(update, context):
                      f'<b>├ 💣 Total Tasks: </b>{total_task}\n'\
                      f'<b>╰ 🔫 User Tasks: </b>{user_task}\n\n'
         else: 
-            stats += f'<b>╭─《 ⚠️ BOT LIMITS ⚠️ 》</b>\n'\
-                     f'<b>├  Torrent/Direct: </b>{torrent_direct}\n'\
-                     f'<b>├  Zip/Unzip: </b>{zip_unzip}\n'\
-                     f'<b>├  Leech: </b>{leech_limit}\n'\
-                     f'<b>├  Clone: </b>{clone_limit}\n'\
-                     f'<b>├  Mega: </b>{mega_limit}\n'\
-                     f'<b>├  Total Tasks: </b>{total_task}\n'\
-                     f'<b>╰  User Tasks: </b>{user_task}\n\n'
+            stats += f'<b>《 ⚠️ BOT LIMITS ⚠️ 》</b>\n'\
+                     f'<b> Torrent/Direct: </b>{torrent_direct}\n'\
+                     f'<b> Zip/Unzip: </b>{zip_unzip}\n'\
+                     f'<b> Leech: </b>{leech_limit}\n'\
+                     f'<b> Clone: </b>{clone_limit}\n'\
+                     f'<b> Mega: </b>{mega_limit}\n'\
+                     f'<b> Total Tasks: </b>{total_task}\n'\
+                     f'<b> User Tasks: </b>{user_task}\n\n'
 
     if config_dict['PICS']:
         sendPhoto(stats, context.bot, update.message, rchoice(config_dict['PICS']))
@@ -206,7 +206,7 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://github.com/weebzone/WZML'>WeebZone</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
+<b><a href='https://telegram.dog/DrTorrentXU'>Dr. Torrent X</a></b> - The Ultimate Telegram MIrror-Leech Group to Upload Your File & Link in Google Drive & Telegram
 Choose a help category:
 '''
 
